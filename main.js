@@ -48,11 +48,7 @@ function init() {
 }
 init();
 
-let counter = 0;
-let animateCount = 0;
-
 function animate() {
-    animateCount++;
     ctx.fillStyle = 'rgba(0,0,0,0.1)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.font = '140px serif';
@@ -63,11 +59,6 @@ function animate() {
         for (let i = 0; i < particles.length; i++) {
             particles[i].draw();
             particles[i].update();
-            // counter++;
-            // if (counter == canvas.width) {
-            //     particles[i].random();
-            //     counter = 0;
-            // }
         }
     }
     requestAnimationFrame(animate);
