@@ -1,8 +1,8 @@
 const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
 
-canvas1.width = innerWidth;
-canvas1.height = innerHeight;
+canvas.width = innerWidth;
+canvas.height = innerHeight;
 
 
 class Particle {
